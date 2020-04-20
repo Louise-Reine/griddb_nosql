@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Boussole Québec</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      background-color: rgb(180,180,180);
+      font-size: 100%;
+      font-family: sans-serif;
+    }
+    #div1{
+      background-color: rgb(244,244,244);
+      height: 900px;
+      width: 85%;
+      position: absolute;
+      left: 7.5%;
+      top: 0%;
+      
+    }
+    #div2{
+      background-color: rgb(210,210,210);
+      height: 100%;
+      width: 95%;
+      position: absolute;
+      left: 2.5%;
+    }
+    #ligne{
+      height:1px;
+      border-bottom: solid white 1px;
+      background-color: rgb(150,150,150);
+      width: 90%;
+      position: absolute;
+      top: 140px;
+      left: 5%;
+    }
+    h1{
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 430%;
+      text-align: center;
+    }
+    h2{
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 35pt;
+      text-align: center;
+      color: rgb(70,70,70);
+      position: relative;
+      top: -15px;
+    }
+    #aa{
+      background-color: rgb(19,111,31);
+      border-radius: 5px;
+      width: 600px;
+      position: absolute;
+      left: 50%;
+      margin-left: -300px;
+      height: 60px;
+      top: 470px;
+      border: none;
+      color: white;
+      font-size: 30pt;
+      font-family: sans-serif;
+      font-weight: normal;
+    }
+    #a{
+      background-color: rgb(0,204,0);
+      border-radius: 5px;
+      width: 600px;
+      position: absolute;
+      left: 50%;
+      margin-left: -300px;
+      height: 60px;
+      top: 540px;
+      border: none;
+      color: white;
+      font-size: 30pt;
+      font-family: sans-serif;
+      font-weight: normal;
+    }
+    #n{
+      background-color: rgb(170,170,170);
+      border-radius: 5px;
+      width: 600px;
+      position: absolute;
+      left: 50%;
+      margin-left: -300px;
+      height: 60px;
+      top: 610px;
+      border: none;
+      color: white;
+      font-size: 30pt;
+      font-family: sans-serif;
+      font-weight: normal;
+    }
+    #d{
+      background-color: rgb(255,75,75);
+      border-radius: 5px;
+      width: 600px;
+      position: absolute;
+      left: 50%;
+      margin-left: -300px;
+      height: 60px;
+      top: 680px;
+      border: none;
+      color: white;
+      font-size: 30pt;
+      font-family: sans-serif;
+      font-weight: normal;
+    }
+    #dd{
+      background-color: rgb(255,21,21);
+      border-radius: 5px;
+      width: 600px;
+      position: absolute;
+      left: 50%;
+      margin-left: -300px;
+      height: 60px;
+      top: 750px;
+      border: none;
+      color: white;
+      font-size: 30pt;
+      font-family: sans-serif;
+      font-weight: 300;
+    }
+    #ques{
+      color: rgb(40,40,40);
+      font-size: 42px;
+      text-align: center;
+      font-weight: 500;
+      background-color: rgb(235,235,235);
+      border-radius: 10px;
+      width: 600px;
+      position: absolute;
+      left: 50%;
+      margin-left: -316px;
+      height: 188px;
+      top: 183px;
+      align-items: center;
+      padding: 16px;
+      display: flex;
+    }
+    #retour{
+      background-color: rgb(50,50,50);
+      border-radius: 5px;
+      width: 200px;
+      position: absolute;
+      left: 50%;
+      margin-left: -100px;
+      height: 60px;
+      top: 820px;
+      border: none;
+      color: white;
+      font-size: 30pt;
+      font-family: sans-serif;
+      font-weight: 300;
+    }
+    #sec{
+      display: none;
+    }
+    #economie{
+      position: absolute;
+      top: 270px;
+      height: 55px;
+      left: 50%;
+      margin-left: -250px;
+      width: 500px;
+    }
+    #marches, #egalite{
+      border: solid black 3px;
+      border-left-width: 0px;
+      border-right-width: 0px;
+      height:55px;
+      float: left;
+    }
+    #identite{
+      position: absolute;
+      top: 400px;
+      height: 55px;
+      left: 50%;
+      margin-left: -250px;
+      width: 500px;
+    }
+    #globaliste, #nationaliste{
+      border: solid black 3px;
+      border-left-width: 0px;
+      border-right-width: 0px;
+      height:55px;
+      float: left;
+    }
+    #gouvernement{
+      position: absolute;
+      top: 660px;
+      height: 55px;
+      left: 50%;
+      margin-left: -250px;
+      width: 500px;
+    }
+    #autorite, #liberte{
+      border: solid black 3px;
+      border-left-width: 0px;
+      border-right-width: 0px;
+      height:55px;
+      float: left;
+    }
+    #environnement{
+      position: absolute;
+      top: 530px;
+      height: 55px;
+      left: 50%;
+      margin-left: -250px;
+      width: 500px;
+    }
+    #productivite, #ecologie{
+      border: solid black 3px;
+      border-left-width: 0px;
+      border-right-width: 0px;
+      height:55px;
+      float: left;
+    }
+    #changement{
+      position: absolute;
+      top: 790px;
+      height: 55px;
+      left: 50%;
+      margin-left: -250px;
+      width: 500px;
+    }
+    #tradition, #progres{
+      border: solid black 3px;
+      border-left-width: 0px;
+      border-right-width: 0px;
+      height:55px;
+      float: left;
+    }
+    #ega, #glo, #prod, #autor, #tra{
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      height: 110px;
+      width: 150px;
+      position: absolute;
+      top: -28px;
+      left: -154px;
+      border: solid black 3px;
+      border-radius: 8px;
+    }
+    #mar, #nat, #ecolo, #liber, #progr{
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      height: 110px;
+      width: 150px;
+      position: absolute;
+      top: -28px;
+      left: 495px;
+      border: solid black 3px;
+      border-radius: 8px;
+    }
+    .res{
+      position: relative;
+      top: -15px;
+    }
+    #c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9, #c10{
+      font-size: 50px;
+      position: relative;
+      top: -58px;
+      text-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="div1">
+    <div id="div2">
+        <h1>Boussole Québec</h1>
+        <div id="ligne"></div>
+        <div id="fir">
+          <h2 id="pos">Question 1 sur 50</h2>
+          <p id="ques"></p>
+          <input type="button" id="aa" value="" onClick="rep(2);">
+          <input type="button" id="a" value="" onClick="rep(1);">
+          <input type="button" id="n" value="Neutre/Indécis" onClick="rep(0);">
+          <input type="button" id="d" value="" onClick="rep(-1);">
+          <input type="button" id="dd" value="" onClick="rep(-2);">
+          <input type="button" id="retour" value="Retour" onClick="back();">
+        </div>
+        <div id="sec">
+          <h2>Vos résultats</h2>
+          
+          
+          <div id="economie"><div id="ega" style="background-color: rgb(219,59,59)"><p class="res">Égalitaire</p><p id="c1"></p></div>
+          <div id="egalite" style="background-color: rgb(219,59,59)"></div>
+          <div id="marches" style="background-color: rgb(55,134,55)"></div>
+          <div id="mar" style="background-color: rgb(55,134,55)"><p class="res">Libre marché</p><p id="c2"></p></div></div>
+          
+          
+          <div id="identite"><div id="glo" style="background-color: rgb(255,128,191)"><p class="res">Globaliste</p><p id="c3"></p></div>
+          <div id="globaliste" style="background-color: rgb(255,128,191)"></div>
+          <div id="nationaliste" style="background-color: rgb(20,20,179)"></div>
+          <div id="nat" style="background-color: rgb(20,20,179)"><p class="res">Nationaliste</p><p id="c4"></p></div></div>
+          
+          
+          <div id="environnement"><div id="prod" style="background-color: rgb(153,77,0)"><p class="res">Productiviste</p><p id="c5"></p></div>
+          <div id="productivite" style="background-color: rgb(153,77,0)"></div>
+          <div id="ecologie" style="background-color: rgb(153,255,61)"></div>
+          <div id="ecolo" style="background-color: rgb(153,255,61)"><p class="res">Écologiste</p><p id="c6"></p></div></div>
+          
+          
+          <div id="gouvernement"><div id="autor" style="background-color: rgb(70,70,255)"><p class="res">Autoritaire</p><p id="c7"></p></div>
+          <div id="autorite" style="background-color: rgb(70,70,255)"></div>
+          <div id="liberte" style="background-color: rgb(255,255,55)"></div>
+          <div id="liber" style="background-color: rgb(255,255,55)"><p class="res">Libertaire</p><p id="c8"></p></div></div>
+          
+          
+          <div id="changement"><div id="tra" style="background-color: rgb(198,83,198)"><p class="res">Conservateur</p><p id="c9"></p></div>
+          <div id="tradition" style="background-color: rgb(198,83,198)"></div>
+          <div id="progres" style="background-color: rgb(255,173,51)"></div>
+          <div id="progr" style="background-color: rgb(255,173,51)"><p class="res">Progressiste</p><p id="c10"></p></div></div>
+          
+        </div>
+    </div>
+  </div>
+</body>
+<script>
+var eco, ide, lib, env, pro;
+eco = 666
+ide = 777
+lib = 888
+env = 999
+pro = 111
+
+var q = new Array();
+q[1] = new Array();
+q[1][0] = "Les syndicats ont trop d'importance au Québec";
+q[1][1] = "x";
+q[1][2] 
+q[1][3];
+q[1][4] = 1; //1=d'accord 2=élevé ms 3=élevé fs 4=élevé mp 5=élevé fp 6=plus
+q[1][eco] = 1
+q[1][ide] = 0
+q[1][lib] = 0
+q[1][env] = 0
+q[1][pro] = 0
+
+q[2] = new Array();
+q[2][0] = "On met trop d’emphase sur les élèves en difficultés au détriment des élèves doués"
+q[2][1] = "x";
+q[2][2] 
+q[2][3];
+q[2][4] = 1;
+q[2][eco] = 1
+q[2][ide] =0
+q[2][lib] =0
+q[2][env] = 0
+q[2][pro] = 0
+
+q[3] = new Array();
+q[3][0] = "Il est trop facile au Québec de survivre sans travailler (en se fiant au bien-être social)"
+q[3][1] = "x";
+q[3][2] 
+q[3][3];
+q[3][4] = 1;
+q[3][eco] = 1
+q[3][ide] =0
+q[3][lib] =0
+q[3][env] = 0
+q[3][pro] = 0
+
+q[4] = new Array();
+q[4][0] = "Les frais de scolarité devraient être…"
+q[4][1] = "x";
+q[4][2] 
+q[4][3];
+q[4][4] = 4;
+q[4][eco] = 1
+q[4][ide] =0
+q[4][lib] =0
+q[4][env] = 0
+q[4][pro] = 0
+
+q[5] = new Array();
+q[5][0] = "On devrait laisser plus de place au secteur privé dans le système de santé"
+q[5][1] = "x";
+q[5][2] 
+q[5][3];
+q[5][4] = 1;
+q[5][eco] = 1
+q[5][ide] =0
+q[5][lib] =0.5
+q[5][env] = 0
+q[5][pro] = 0
+
+q[6] = new Array();
+q[6][0] = "Le monopole du gouvernement pour la vente d’électricité devrait être réduit"
+q[6][1] = "x";
+q[6][2] 
+q[6][3];
+q[6][4] = 1;
+q[6][eco] = 1
+q[6][ide] =0
+q[6][lib] =0.5
+q[6][env] = 0
+q[6][pro] = 0
+
+q[7] = new Array();
+q[7][0] = "On oublie trop les intérêts des plus riches"
+q[7][1] = "x";
+q[7][2] 
+q[7][3];
+q[7][4] = 1;
+q[7][eco] = 1
+q[7][ide] =0
+q[7][lib] =0
+q[7][env] = 0
+q[7][pro] = 0
+
+q[8] = new Array();
+q[8][0] = "Les taxes sur le carbone devraient être…"
+q[8][1] = "x";
+q[8][2]
+q[8][3];
+q[8][4] = 5;
+q[8][eco] = -1
+q[8][ide] =0
+q[8][lib] =-0.5
+q[8][env] = 1
+q[8][pro] = 0
+
+q[9] = new Array();
+q[9][0] = "Les taxes sur les autos à essence devraient être…"
+q[9][1] = "x";
+q[9][2]
+q[9][3];
+q[9][4] = 5;
+q[9][eco] = -1
+q[9][ide] =0
+q[9][lib] =-0.5
+q[9][env] = 1
+q[9][pro] = 0
+
+q[10] = new Array();
+q[10][0] = "Les prix sur les produits devraient être plus élevés pour réduire la consommation des Québécois"
+q[10][1] = "x";
+q[10][2]
+q[10][3];
+q[10][4] = 1;
+q[10][eco] = -1
+q[10][ide] =0
+q[10][lib] =-1
+q[10][env] = 1
+q[10][pro] = 0
+
+q[11] = new Array();
+q[11][0] = "Le Québec devrait diminuer les subventions aux écoles privées pour plus investir dans le secteur public"
+q[11][1] = "x";
+q[11][2]
+q[11][3];
+q[11][4] = 1;
+q[11][eco] = -1
+q[11][ide] =0
+q[11][lib] =0
+q[11][env] = 0
+q[11][pro] = 0
+
+q[12] = new Array();
+q[12][0] = "Les écoles publiques sont trop laissées de côté"
+q[12][1] = "x";
+q[12][2]
+q[12][3];
+q[12][4] = 1
+q[12][eco] = -1
+q[12][ide] =0
+q[12][lib] =0
+q[12][env] = 0
+q[12][pro] = 0
+
+q[13] = new Array();
+q[13][0] = "L’accès aux garderies devrait être agrandi pour les familles moins aisées"
+q[13][1] = "x";
+q[13][2]
+q[13][3];
+q[13][4] = 1;
+q[13][eco] = -1
+q[13][ide] =0
+q[13][lib] =0
+q[13][env] = 0
+q[13][pro] = 0
+
+q[14] = new Array();
+q[14][0] = "On devrait plus taxer les automobilistes pour investir dans le transport en commun"
+q[14][1] = "x";
+q[14][2]
+q[14][3];
+q[14][4] = 1;
+q[14][eco] = -1
+q[14][ide] =0
+q[14][lib] =-0.5
+q[14][env] = 1
+q[14][pro] = 0
+
+q[15] = new Array();
+q[15][0] = "L’écart de salaire entre les infirmiers et les médecins est trop élevé"
+q[15][1] = "x";
+q[15][2]
+q[15][3];
+q[15][4] = 1;
+q[15][eco] = -1
+q[15][ide] =0
+q[15][lib] =0
+q[15][env] = 0
+q[15][pro] = 0
+
+q[16] = new Array();
+q[16][0] = "L’assurance dentaire devrait être gratuite au Québec"
+q[16][1] = "x";
+q[16][2]
+q[16][3];
+q[16][4] = 1;
+q[16][eco] = -1
+q[16][ide] =0
+q[16][lib] =0
+q[16][env] = 0
+q[16][pro] = 1
+
+q[17] = new Array();
+q[17][0] = "Les impôts des gens plus aisés devraient être…"
+q[17][1] = "x";
+q[17][2]
+q[17][3];
+q[17][4] = 4;
+q[17][eco] = -1
+q[17][ide] =0
+q[17][lib] =0
+q[17][env] = 0
+q[17][pro] = 0
+
+q[18] = new Array();
+q[18][0] = "Les impôts des grandes entreprises devraient être…"
+q[18][1] = "x";
+q[18][2]
+q[18][3];
+q[18][4] = 4;
+q[18][eco] = -1
+q[18][ide] =0
+q[18][lib] =0
+q[18][env] = 0
+q[18][pro] = 0
+
+q[19] = new Array();
+q[19][0] = "Le salaire minimum devrait être…"
+q[19][1] = "x";
+q[19][2]
+q[19][3];
+q[19][4] = 2;
+q[19][eco] = -1
+q[19][ide] =0
+q[19][lib] =0
+q[19][env] = 0
+q[19][pro] = 0
+
+q[20] = new Array();
+q[20][0] = "Les intérêts collectifs sont plus importants que les intérêts individuels"
+q[20][1] = "x";
+q[20][2]
+q[20][3];
+q[20][4] = 1;
+q[20][eco] = -1
+q[20][ide] =0
+q[20][lib] =-1
+q[20][env] = 0
+q[20][pro] = 0
+
+q[21] = new Array();
+q[21][0] = "Il est parfois normal pour l'état de cacher des informations à ses citoyens"
+q[21][1] = "x";
+q[21][2]
+q[21][3];
+q[21][4] = 1;
+q[21][eco] = 0
+q[21][ide] =0
+q[21][lib] =-1
+q[21][env] = 0
+q[21][pro] = 0
+
+q[22] = new Array();
+q[22][0] = "Les employés de l’état devraient avoir le droit de porter des signe religieux visibles."
+q[22][1] = "x";
+q[22][2]
+q[22][3];
+q[22][4] = 1;
+q[22][eco] = 0
+q[22][ide] =-1
+q[22][lib] =1
+q[22][env] = 0
+q[22][pro] = 1
+
+q[23] = new Array();
+q[23][0] = "L’accès aux écoles anglophones devrait être…"
+q[23][1] = "x";
+q[23][2]
+q[23][3];
+q[23][4] = 2;
+q[23][eco] = 0
+q[23][ide] =-1
+q[23][lib] =1
+q[23][env] = 0
+q[23][pro] = 0.5
+
+q[24] = new Array();
+q[24][0] = "On devrait renforcer les règles visant à accueillir les clients en Français dans les commerces"
+q[24][1] = "x";
+q[24][2]
+q[24][3];
+q[24][4] = 1;
+q[24][eco] = 0
+q[24][ide] =1
+q[24][lib] =0
+q[24][env] = 0
+q[24][pro] = 0
+
+q[25] = new Array();
+q[25][0] = "Le Québec laisse trop de place aux accommodements raisonnables"
+q[25][1] = "x";
+q[25][2]
+q[25][3];
+q[25][4] = 1;
+q[25][eco] = 0
+q[25][ide] =1
+q[25][lib] =-1
+q[25][env] = 0
+q[25][pro] = -0.5
+
+q[26] = new Array();
+q[26][0] = "Le crucifix à l’Assemblée Nationale doit être retiré"
+q[26][1] = "x";
+q[26][2]
+q[26][3];
+q[26][4] = 1;
+q[26][eco] = 0
+q[26][ide] =-1
+q[26][lib] =0
+q[26][env] = 0
+q[26][pro] = 1
+
+q[27] = new Array();
+q[27][0] = "Le Québec devrait devenir un état indépendant"
+q[27][1] = "x";
+q[27][2]
+q[27][3];
+q[27][4] = 1;
+q[27][eco] = 0
+q[27][ide] =2
+q[27][lib] =0
+q[27][env] = 0
+q[27][pro] = 1
+
+q[28] = new Array();
+q[28][0] = "Au Québec, les seuils d’immigrations devraient être…"
+q[28][1] = "x";
+q[28][2]
+q[28][3];
+q[28][4] = 4;
+q[28][eco] = 0
+q[28][ide] =-1
+q[28][lib] =0
+q[28][env] = 0
+q[28][pro] = 0
+
+q[29] = new Array();
+q[29][0] = "Les subventions aux artistes Québecois devraient être…"
+q[29][1] = "x";
+q[29][2]
+q[29][3];
+q[29][4] = 5;
+q[29][eco] = -1
+q[29][ide] =0
+q[29][lib] =0
+q[29][env] = 0
+q[29][pro] = 0.5
+
+q[30] = new Array();
+q[30][0] = "Le Québec devrait toujours mettre ses priorités avant celles des autres états"
+q[30][1] = "x";
+q[30][2]
+q[30][3];
+q[30][4] = 1;
+q[30][eco] = 0
+q[30][ide] =1
+q[30][lib] =0
+q[30][env] = 0
+q[30][pro] = 0
+
+q[31] = new Array();
+q[31][0] = "Parler Français devrait être une priorité pour choisir les nouveaux arrivants"
+q[31][1] = "x";
+q[31][2]
+q[31][3];
+q[31][4] = 1;
+q[31][eco] = 0
+q[31][ide] =1
+q[31][lib] =0
+q[31][env] = 0
+q[31][pro] = 0
+
+q[32] = new Array();
+q[32][0] = "Le Québec devrait mettre plus d'effort pour assimiler les nouveaux arrivants"
+q[32][1] = "x";
+q[32][2]
+q[32][3];
+q[32][4] = 1;
+q[32][eco] = 0
+q[32][ide] =1
+q[32][lib] =-1
+q[32][env] = 0
+q[32][pro] = -0.5
+
+q[33] = new Array();
+q[33][0] = "À quel point les Québécois devraient-ils s’adapter aux coutumes des nouveaux arrivants ?"
+q[33][1] = "x";
+q[33][2]
+q[33][3];
+q[33][4] = 6;
+q[33][eco] = 0
+q[33][ide] = -1
+q[33][lib] =0
+q[33][env] = 0
+q[33][pro] = 1
+
+q[34] = new Array();
+q[34][0] = "L’exploitation du pétrole au Québec devrait être réduite."
+q[34][1] = "x";
+q[34][2]
+q[34][3];
+q[34][4] = 1;
+q[34][eco] = 0
+q[34][ide] = 0
+q[34][lib] =0
+q[34][env] = 1
+q[34][pro] = 0
+
+q[35] = new Array();
+q[35][0] = "Le Québec devrait mettre plus de pression sur le fédéral pour empêcher le passage d’un pipeline"
+q[35][1] = "x";
+q[35][2]
+q[35][3];
+q[35][4] = 1;
+q[35][eco] = 0
+q[35][ide] = 0.5
+q[35][lib] =0
+q[35][env] = 1
+q[35][pro] = 0
+
+q[36] = new Array();
+q[36][0] = "On devrait plus surveiller les entreprises qui risquent de mettre l’environnement en péril"
+q[36][1] = "x";
+q[36][2]
+q[36][3];
+q[36][4] = 1;
+q[36][eco] = 0
+q[36][ide] = 0
+q[36][lib] =-1
+q[36][env] = 1
+q[36][pro] = 0
+
+q[37] = new Array();
+q[37][0] = "Les normes environnementales au Québec devraient être…"
+q[37][1] = "x";
+q[37][2]
+q[37][3];
+q[37][4] = 5;
+q[37][eco] = 0
+q[37][ide] = 0
+q[37][lib] =-1
+q[37][env] = 1
+q[37][pro] = 0
+
+q[38] = new Array();
+q[38][0] = "L’éducation sexuelle prend trop de place au Québec"
+q[38][1] = "x";
+q[38][2]
+q[38][3];
+q[38][4] = 1;
+q[38][eco] = 0
+q[38][ide] = 0
+q[38][lib] =0
+q[38][env] = 0
+q[38][pro] = -1
+
+q[39] = new Array();
+q[39][0] = "Il faudrait diminuer l’espace des automobiles pour créer de voix réservées aux autobus"
+q[39][1] = "x";
+q[39][2]
+q[39][3];
+q[39][4] = 1;
+q[39][eco] = 0
+q[39][ide] = 0
+q[39][lib] =-1
+q[39][env] = 1
+q[39][pro] = 0.5
+
+q[40] = new Array();
+q[40][0] = "Les produits étrangers devraient plus être taxés que les produits locaux"
+q[40][1] = "x";
+q[40][2]
+q[40][3];
+q[40][4] = 1;
+q[40][eco] = 0
+q[40][ide] = 1
+q[40][lib] =-0.5
+q[40][env] = 0.5
+q[40][pro] = 0
+
+q[41] = new Array();
+q[41][0] = "L’âge légal pour posséder et consommer du cannabis devrait être…"
+q[41][1] = "x";
+q[41][2]
+q[41][3];
+q[41][4] = 2;
+q[41][eco] = 0
+q[41][ide] =0
+q[41][lib] =-1
+q[41][env] = 0
+q[41][pro] = -0.5
+
+q[42] = new Array();
+q[42][0] = "La légalisation du cannabis était une bonne idée"
+q[42][1] = "x";
+q[42][2]
+q[42][3];
+q[42][4] = 1;
+q[42][eco] = 0
+q[42][ide] = 0
+q[42][lib] =1
+q[42][env] = 0
+q[42][pro] = 1
+
+q[43] = new Array();
+q[43][0] = "Le Québec devrait faire plus d’efforts pour satisfaire les besoins des premières nations"
+q[43][1] = "x";
+q[43][2]
+q[43][3];
+q[43][4] = 1;
+q[43][eco] = 0
+q[43][ide] = -1
+q[43][lib] =0
+q[43][env] = 0
+q[43][pro] = 1
+
+q[44] = new Array();
+q[44][0] = "L’ouverture aux communautés LGBT+ est allé trop loin au Québec"
+q[44][1] = "x";
+q[44][2]
+q[44][3];
+q[44][4] = 1;
+q[44][eco] = 0
+q[44][ide] = 0
+q[44][lib] =-1
+q[44][env] = 0
+q[44][pro] = -1
+
+q[45] = new Array();
+q[45][0] = "L’accès à l’avortement devrait être réduit"
+q[45][1] = "x";
+q[45][2]
+q[45][3];
+q[45][4] = 1;
+q[45][eco] = 0
+q[45][ide] = 0
+q[45][lib] =-1
+q[45][env] = 0
+q[45][pro] = -1
+
+q[46] = new Array();
+q[46][0] = "La peine de mort devrait être une option au Québec pour les crimes les plus graves"
+q[46][1] = "x";
+q[46][2]
+q[46][3];
+q[46][4] = 1;
+q[46][eco] = 0
+q[46][ide] = 0
+q[46][lib] =-1
+q[46][env] = 0
+q[46][pro] = -0.5
+
+q[47] = new Array();
+q[47][0] = "Le Québec met trop d’emphase sur la réhabilitation au lieu de la punition"
+q[47][1] = "x";
+q[47][2]
+q[47][3];
+q[47][4] = 1;
+q[47][eco] = 0
+q[47][ide] = 0
+q[47][lib] =-1
+q[47][env] = 0
+q[47][pro] = -0.5
+
+q[48] = new Array();
+q[48][0] = "L’accès au mariage homosexuel devrait être restreint"
+q[48][1] = "x";
+q[48][2]
+q[48][3];
+q[48][4] = 1;
+q[48][eco] = 0
+q[48][ide] = 0
+q[48][lib] =-1
+q[48][env] = 0
+q[48][pro] = -1
+
+q[49] = new Array();
+q[49][0] = "Les parents devraient parfois frapper leurs enfants pour assurer la discipline"
+q[49][1] = "x";
+q[49][2]
+q[49][3];
+q[49][4] = 1;
+q[49][eco] = 0
+q[49][ide] = 0
+q[49][lib] =-1
+q[49][env] = 0
+q[49][pro] = -1
+
+q[50] = new Array();
+q[50][0] = "Appeler une personne par un mauvais pronom devrait être considéré comme une offense"
+q[50][1] = "x";
+q[50][2]
+q[50][3];
+q[50][4] = 1;
+q[50][eco] = 0
+q[50][ide] = 0
+q[50][lib] =-1
+q[50][env] = 0
+q[50][pro] = 1
+
+
+
+var cat, mul; 
+cat = 0;
+
+var econ, iden, envi, libe, prog; //scores
+econ = iden = envi = libe = prog = 0;
+
+var que;
+var qqq = 1;
+
+function proprietes(){
+  
+  
+  
+  
+  //Choix de réponses
+  if(q[que][4]==1){
+    document.getElementById("aa").value="Fortement d'accord"
+    document.getElementById("a").value="Un peu d'accord"
+    document.getElementById("d").value="Un peu en désaccord"
+    document.getElementById("dd").value="Fortement en désaccord"
+  }
+  else if(q[que][4]==6){
+    document.getElementById("aa").value="Beaucoup plus"
+    document.getElementById("a").value="Un peu plus"
+    document.getElementById("d").value="Un peu moins"
+    document.getElementById("dd").value="Beaucoup moins"
+  }
+  else{
+    var fm;
+    var sp;
+    if((q[que][4]==2) || (q[que][4]==4)){
+      fm = ""
+    }
+    else{
+      fm = "e"
+    }
+    if((q[que][4]==2) || (q[que][4]==3)){
+      sp = ""
+    }
+    else{
+      sp = "s"
+    }
+    
+    document.getElementById("aa").value="Beaucoup plus élevé" + "" + fm + "" + sp
+    document.getElementById("a").value="Un peu plus élevé" + "" + fm + "" + sp
+    document.getElementById("d").value="Un peu moins élevé" + "" + fm + "" + sp
+    document.getElementById("dd").value="Beaucoup moins élevé" + "" + fm + "" + sp
+  }
+  
+  
+}
+
+function qc(){
+  que = Math.ceil(Math.random()*50)
+  if(q[que][1]!=="x"){
+  qc()
+  }
+  else{
+    proprietes()
+  }
+}
+qc()
+document.getElementById("ques").innerHTML = q[que][0]
+q[que][1] = qqq;
+
+function clas(){
+  econ+=q[que][eco]*q[que][3]
+  iden+=q[que][ide]*q[que][3]
+  libe+=q[que][lib]*q[que][3]
+  envi+=q[que][env]*q[que][3]
+  prog+=q[que][pro]*q[que][3]
+}
+
+
+function rep(a){ //quand le joueur donne sa réponse
+  q[que][3] = a
+  clas()
+  if(qqq<=49){
+    qqq++
+    qc()
+  }
+  else{
+    fin()
+  }
+  document.getElementById("ques").innerHTML = q[que][0]
+  q[que][1] = qqq;
+  document.getElementById("pos").innerHTML = "Question " + qqq + " sur 50"
+}
+
+function back(){
+  if(qqq==1){
+    
+  }
+  else{
+    var y = Math.ceil(Math.random()*50)
+    if (q[y][1]==(qqq-1)){
+      q[que][1] = "x";
+      q[que][3] = "x";
+      que = y
+      document.getElementById("ques").innerHTML = q[y][0]
+      econ-=q[que][eco]*q[que][3]
+      iden-=q[que][ide]*q[que][3]
+      libe-=q[que][lib]*q[que][3]
+      envi-=q[que][env]*q[que][3]
+      prog-=q[que][pro]*q[que][3]
+      qqq--
+      document.getElementById("pos").innerHTML = "Question " + qqq + " sur 50"
+      proprietes()
+    }
+    else{
+      back()
+    }
+  }
+}
+
+var d1;
+var d2;
+var d3;
+var d4;
+var d5;
+function fin(){
+  console.log(econ + " " + iden + " " + libe + " " + envi)
+  document.getElementById("fir").style.display="none"
+  document.getElementById("sec").style.display="block"
+  
+  document.getElementById("egalite").style.width= 250-Math.floor(125/21*econ) +"px"
+  document.getElementById("marches").style.width= 250+Math.floor(125/21*econ) +"px"
+  document.getElementById("globaliste").style.width= 250-Math.floor(125/14.5*iden) +"px"
+  document.getElementById("nationaliste").style.width= 250+Math.floor(125/14.5*iden) +"px"
+  document.getElementById("autorite").style.width= 250-Math.floor(125/23*libe) +"px"
+  document.getElementById("liberte").style.width= 250+Math.floor(125/23*libe) +"px"
+  document.getElementById("productivite").style.width= 250-Math.floor(125/9.5*envi) +"px"
+  document.getElementById("ecologie").style.width= 250+Math.floor(125/9.5*envi) +"px"
+  document.getElementById("tradition").style.width= 250-Math.floor(125/17*prog) +"px"
+  document.getElementById("progres").style.width= 250+Math.floor(125/17*prog) +"px"
+  
+  document.getElementById("c1").innerHTML = Math.ceil((50 - 25/21*econ)*10)/10 + "%"
+  document.getElementById("c2").innerHTML = Math.floor((50 + 25/21*econ)*10)/10 + "%"
+  document.getElementById("c3").innerHTML = Math.ceil((50 - 25/14.5*iden)*10)/10 + "%"
+  document.getElementById("c4").innerHTML = Math.floor((50 + 25/14.5*iden)*10)/10 + "%"
+  document.getElementById("c5").innerHTML = Math.ceil((50 - 25/9.5*envi)*10)/10 + "%"
+  document.getElementById("c6").innerHTML = Math.floor((50 + 25/9.5*envi)*10)/10 + "%"
+  document.getElementById("c7").innerHTML = Math.ceil((50 - 25/23*libe)*10)/10 + "%"
+  document.getElementById("c8").innerHTML = Math.floor((50 + 25/23*libe)*10)/10 + "%"
+  document.getElementById("c9").innerHTML = Math.ceil((50 - 25/17*prog)*10)/10 + "%"
+  document.getElementById("c10").innerHTML = Math.floor((50 + 25/17*prog)*10)/10 + "%"
+  
+  
+}
+
+
+
+
+
+
+</script>
+</html>
